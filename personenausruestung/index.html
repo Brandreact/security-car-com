@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de" data-root="../">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personenausrüstung | Security Car – Valentin Tusch GmbH</title>
+  <meta name="description" content="Gepanzerte Fahrzeuge, Sonderschutzfahrzeuge und Spezialtechnik – Valentin Tusch GmbH, Kärnten.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dark':       '#0a0a0a',
+            'dark-card':  '#111111',
+            'dark-border':'#1e1e1e',
+            'dark-hover': '#181818',
+            'gold':       '#F9C349',
+            'gold-dark':  '#D4A017',
+            'muted':      '#F0EFEC',
+          },
+          fontFamily: { sans: ['Karla', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}
+    body{background:#0a0a0a;color:#F0EFEC;font-family:'Karla',sans-serif}
+    #navbar{background:rgba(10,10,10,0.92);backdrop-filter:blur(10px)}
+    .nav-scrolled{background:#0a0a0a !important;border-bottom:1px solid #1e1e1e;box-shadow:0 2px 20px rgba(0,0,0,.5)}
+    .sc-mobile-menu{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .sc-mobile-menu.open{max-height:500px}
+    .fade-on-scroll{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+    .fade-on-scroll.visible,.screenshot .fade-on-scroll{opacity:1;transform:none}
+    .gallery-img{aspect-ratio:4/3;width:100%;height:100%;object-fit:cover;display:block;background:#111;transition:transform .4s ease}
+    .gallery-card:hover .gallery-img{transform:scale(1.04)}
+  </style>
+  <script src="../site.js"></script>
+</head>
+<body class="bg-dark text-muted">
+  <div id="sc-nav"></div>
+  <div style="height:80px"></div><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-gray-500"><a href="../index.html" class="hover:text-gold transition-colors">Home</a> <span class="text-gray-600 mx-1">/</span> <span class="text-gold">Personenausrüstung</span></div>
+  <section class="relative py-28 sm:py-36 flex items-center" style="background:linear-gradient(135deg,#0a0a0a 0%,#111 50%,#0a0a0a 100%)">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="w-12 h-0.5 bg-gold mb-6 fade-on-scroll"></div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 fade-on-scroll">Personenausrüstung</h1>
+        <p class="text-lg text-gray-300 fade-on-scroll">Schutzwesten, Helme und ballistische Schutzausrüstung</p>
+      </div>
+    </div>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <p class="text-gray-400 mb-10 max-w-3xl fade-on-scroll">Neben gepanzerten Fahrzeugen bieten wir ein umfassendes Sortiment an persönlicher Schutzausrüstung: Schutzwesten in verschiedenen Schutzklassen (VPAM, NIJ, STANAG) sowie Helme und Visiere für den professionellen Einsatz.</p>
+    <div class="grid sm:grid-cols-2 gap-8 mb-12">
+      <a href="../security-car/schutzwesten.html" class="group block bg-dark-card border border-dark-border hover:border-gold/40 transition-all overflow-hidden fade-on-scroll">
+        <div class="overflow-hidden aspect-video">
+          <img src="../images/schutzweste.jpg" alt="Schutzwesten" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white group-hover:text-gold transition-colors mb-2">Schutzwesten</h3>
+          <p class="text-gray-400 text-sm">Ballistische Schutzwesten für Polizei, Militär und Personenschutz. Schutzklassen VPAM 3–9, NIJ Level II–IV.</p>
+          <span class="inline-block mt-3 text-xs text-gold font-semibold">Mehr Details →</span>
+        </div>
+      </a>
+      <a href="../security-car/helme-visiere.html" class="group block bg-dark-card border border-dark-border hover:border-gold/40 transition-all overflow-hidden fade-on-scroll">
+        <div class="overflow-hidden aspect-video">
+          <img src="../images/helm.jpg" alt="Helme & Visiere" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-white group-hover:text-gold transition-colors mb-2">Helme & Visiere</h3>
+          <p class="text-gray-400 text-sm">Ballistischer Schutz für den Kopfbereich: Kampfhelme, Visiere und Kombi-Systeme für höchste Anforderungen.</p>
+          <span class="inline-block mt-3 text-xs text-gold font-semibold">Mehr Details →</span>
+        </div>
+      </a>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="border border-dark-border p-6 fade-on-scroll"><h3 class="text-gold font-bold mb-2">VPAM-Zertifiziert</h3><p class="text-gray-400 text-sm">Alle Produkte entsprechen dem deutschen Beschussamt-Standard VPAM.</p></div><div class="border border-dark-border p-6 fade-on-scroll"><h3 class="text-gold font-bold mb-2">NIJ-Standard</h3><p class="text-gray-400 text-sm">Internationale Zertifizierung nach NIJ 0101.06 Level II bis IV.</p></div><div class="border border-dark-border p-6 fade-on-scroll"><h3 class="text-gold font-bold mb-2">STANAG</h3><p class="text-gray-400 text-sm">NATO-gerechte Schutzniveaus für militärische Einsätze.</p></div>
+    </div>
+  </section>
+  <section class="bg-dark-card border-y border-dark-border py-16 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-xs font-semibold text-gold tracking-widest uppercase mb-3">Interesse geweckt?</p>
+      <h2 class="text-3xl font-bold text-white mb-6">Kontaktieren Sie uns für ein Angebot</h2>
+      <a href="../index.html#contact" class="inline-flex items-center gap-2 px-8 py-3.5 bg-gold text-black font-bold text-sm tracking-wide hover:bg-gold-dark transition-colors">
+        Anfrage stellen
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+  <div id="sc-footer"></div>
+</body>
+</html>

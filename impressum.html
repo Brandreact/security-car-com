@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de" data-root="./">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum | Security Car – Valentin Tusch GmbH</title>
+  <meta name="description" content="Gepanzerte Fahrzeuge, Sonderschutzfahrzeuge und Spezialtechnik – Valentin Tusch GmbH, Kärnten.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dark':       '#0a0a0a',
+            'dark-card':  '#111111',
+            'dark-border':'#1e1e1e',
+            'dark-hover': '#181818',
+            'gold':       '#F9C349',
+            'gold-dark':  '#D4A017',
+            'muted':      '#F0EFEC',
+          },
+          fontFamily: { sans: ['Karla', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}
+    body{background:#0a0a0a;color:#F0EFEC;font-family:'Karla',sans-serif}
+    #navbar{background:rgba(10,10,10,0.92);backdrop-filter:blur(10px)}
+    .nav-scrolled{background:#0a0a0a !important;border-bottom:1px solid #1e1e1e;box-shadow:0 2px 20px rgba(0,0,0,.5)}
+    .sc-mobile-menu{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .sc-mobile-menu.open{max-height:500px}
+    .fade-on-scroll{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+    .fade-on-scroll.visible,.screenshot .fade-on-scroll{opacity:1;transform:none}
+    .gallery-img{aspect-ratio:4/3;width:100%;height:100%;object-fit:cover;display:block;background:#111;transition:transform .4s ease}
+    .gallery-card:hover .gallery-img{transform:scale(1.04)}
+  </style>
+  <script src="./site.js"></script>
+</head>
+<body class="bg-dark text-muted">
+  <div id="sc-nav"></div>
+  <div style="height:80px"></div><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-gray-500"><a href="./index.html" class="hover:text-gold transition-colors">Home</a> <span class="text-gray-600 mx-1">/</span> <span class="text-gold">Impressum</span></div>
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <h1 class="text-4xl font-bold text-white mb-8">Impressum</h1>
+    <div class="prose text-gray-400 leading-relaxed space-y-6">
+      <div class="border-l-2 border-gold pl-6">
+        <h2 class="text-xl font-bold text-white mb-3">Angaben gemäß § 5 ECG</h2>
+        <p><strong class="text-muted">Valentin Tusch GmbH</strong><br>Plescherken 18<br>9074 Keutschach<br>Kärnten, Österreich</p>
+      </div>
+      <div class="border-l-2 border-dark-border pl-6">
+        <h2 class="text-xl font-bold text-white mb-3">Kontakt</h2>
+        <p>Telefon: <a href="tel:+43427321007" class="text-gold hover:underline">+43 (0) 4273/21007</a><br>
+           Mobil: <a href="tel:+436642534388" class="text-gold hover:underline">+43 (0) 664/2534 388</a><br>
+           E-Mail: <a href="mailto:valentin.tusch@security-car.com" class="text-gold hover:underline">valentin.tusch@security-car.com</a></p>
+      </div>
+      <div class="border-l-2 border-dark-border pl-6">
+        <h2 class="text-xl font-bold text-white mb-3">Unternehmensangaben</h2>
+        <p>Firmenbuchnummer: FN XXXXXX<br>Firmenbuchgericht: Landesgericht Klagenfurt<br>UID-Nummer: ATU XXXXXXXX</p>
+      </div>
+      <div class="border-l-2 border-dark-border pl-6">
+        <h2 class="text-xl font-bold text-white mb-3">Haftungshinweis</h2>
+        <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+      </div>
+    </div>
+  </section>
+  <div id="sc-footer"></div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de" data-root="../">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helme & Visiere | Security Car – Valentin Tusch GmbH</title>
+  <meta name="description" content="Gepanzerte Fahrzeuge, Sonderschutzfahrzeuge und Spezialtechnik – Valentin Tusch GmbH, Kärnten.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'dark':       '#0a0a0a',
+            'dark-card':  '#111111',
+            'dark-border':'#1e1e1e',
+            'dark-hover': '#181818',
+            'gold':       '#F9C349',
+            'gold-dark':  '#D4A017',
+            'muted':      '#F0EFEC',
+          },
+          fontFamily: { sans: ['Karla', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}
+    body{background:#0a0a0a;color:#F0EFEC;font-family:'Karla',sans-serif}
+    #navbar{background:rgba(10,10,10,0.92);backdrop-filter:blur(10px)}
+    .nav-scrolled{background:#0a0a0a !important;border-bottom:1px solid #1e1e1e;box-shadow:0 2px 20px rgba(0,0,0,.5)}
+    .sc-mobile-menu{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .sc-mobile-menu.open{max-height:500px}
+    .fade-on-scroll{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+    .fade-on-scroll.visible,.screenshot .fade-on-scroll{opacity:1;transform:none}
+    .gallery-img{aspect-ratio:4/3;width:100%;height:100%;object-fit:cover;display:block;background:#111;transition:transform .4s ease}
+    .gallery-card:hover .gallery-img{transform:scale(1.04)}
+  </style>
+  <script src="../site.js"></script>
+</head>
+<body class="bg-dark text-muted">
+  <div id="sc-nav"></div>
+  <div style="height:80px"></div><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-gray-500"><a href="../index.html" class="hover:text-gold transition-colors">Home</a> <span class="text-gray-600 mx-1">/</span> <a href="../personenausruestung/index.html" class="hover:text-gold transition-colors">Personenausrüstung</a> <span class="text-gray-600 mx-1">/</span> <span class="text-gold">Helme & Visiere</span></div>
+  <section class="relative py-28 sm:py-36 flex items-center" style="background:linear-gradient(135deg,#0a0a0a 0%,#111 50%,#0a0a0a 100%)">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="w-12 h-0.5 bg-gold mb-6 fade-on-scroll"></div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 fade-on-scroll">Helme & Visiere</h1>
+        <p class="text-lg text-gray-300 fade-on-scroll">Ballistischer Kopfschutz für höchste Anforderungen</p>
+      </div>
+    </div>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <p class="text-gray-400 mb-10 max-w-3xl fade-on-scroll">Ballistische Schutzhelme und Visiere für Polizei, Spezialkräfte und Sicherheitspersonal. Alle Produkte entsprechen den geltenden internationalen Standards und werden nach Wunsch mit Zubehör wie Nachtsichtgeräthalterungen, Kommunikationssystemen und visor-Upgrades ausgestattet.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+      <div class="gallery-card overflow-hidden bg-dark-card border border-dark-border fade-on-scroll">
+        <img src="../../images/helm.jpg" alt="Schutzhelm" class="gallery-img" loading="lazy" onerror="this.closest('.gallery-card').style.display='none'">
+        
+      </div>
+      <div class="gallery-card overflow-hidden bg-dark-card border border-dark-border fade-on-scroll">
+        <img src="../../images/personenausruestung/helm-2.jpeg" alt="Helm Detail 2" class="gallery-img" loading="lazy" onerror="this.closest('.gallery-card').style.display='none'">
+        
+      </div>
+      <div class="gallery-card overflow-hidden bg-dark-card border border-dark-border fade-on-scroll">
+        <img src="../../images/personenausruestung/helm-3.jpeg" alt="Helm Detail 3" class="gallery-img" loading="lazy" onerror="this.closest('.gallery-card').style.display='none'">
+        
+      </div>
+      <div class="gallery-card overflow-hidden bg-dark-card border border-dark-border fade-on-scroll">
+        <img src="../../images/personenausruestung/helm-4.jpeg" alt="Visier" class="gallery-img" loading="lazy" onerror="this.closest('.gallery-card').style.display='none'">
+        
+      </div></div>
+  </section>
+  <section class="bg-dark-card border-y border-dark-border py-16 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-xs font-semibold text-gold tracking-widest uppercase mb-3">Interesse geweckt?</p>
+      <h2 class="text-3xl font-bold text-white mb-6">Kontaktieren Sie uns für ein Angebot</h2>
+      <a href="../index.html#contact" class="inline-flex items-center gap-2 px-8 py-3.5 bg-gold text-black font-bold text-sm tracking-wide hover:bg-gold-dark transition-colors">
+        Anfrage stellen
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+  <div id="sc-footer"></div>
+</body>
+</html>

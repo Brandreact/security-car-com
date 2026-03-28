@@ -1,0 +1,5 @@
+dist/
+customer_screens/
+node_modules/
+generate.js
+lead_materials/
