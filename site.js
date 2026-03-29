@@ -6,6 +6,17 @@
 document.addEventListener('DOMContentLoaded', function () {
   const root = document.documentElement.dataset.root || './';
 
+  // ─── Inject mobile menu CSS ────────────────────────────────────────
+  if (!document.getElementById('sc-styles')) {
+    const style = document.createElement('style');
+    style.id = 'sc-styles';
+    style.textContent = `
+      .sc-mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+      .sc-mobile-menu.open { max-height: 600px; }
+    `;
+    document.head.appendChild(style);
+  }
+
   // ─── Navigation HTML ───────────────────────────────────────────────
   const navItems = [
     { label: 'Home',           href: root + 'index.html',                key: 'home' },
