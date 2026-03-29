@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     style.textContent = `
       .sc-mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
       .sc-mobile-menu.open { max-height: 600px; }
+      #navbar.menu-open { background: rgba(0,0,0,0.97) !important; box-shadow: 0 1px 0 rgba(249,195,73,0.15); }
     `;
     document.head.appendChild(style);
   }
@@ -191,6 +192,7 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenu.classList.toggle('open', menuOpen);
         iconOpen.classList.toggle('hidden', menuOpen);
         iconClose.classList.toggle('hidden', !menuOpen);
+        navbar.classList.toggle('menu-open', menuOpen);
       });
       mobileMenu.querySelectorAll('a').forEach(a => {
         a.addEventListener('click', () => {
@@ -198,6 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
           mobileMenu.classList.remove('open');
           iconOpen.classList.remove('hidden');
           iconClose.classList.add('hidden');
+          if (!navbar.classList.contains('nav-scrolled')) navbar.classList.remove('menu-open');
         });
       });
     }
